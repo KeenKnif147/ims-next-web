@@ -1,0 +1,30 @@
+@import '../../styles/variables.less';
+
+.drawer-handler {
+  display: none;
+
+  @media screen and (max-width: @small-screen) {
+    display: block;
+    position: fixed;
+    z-index: 10;
+    bottom: 10px;
+    width: 35px;
+    height: 35px;
+    border: none;
+    outline: none;
+    box-shadow: 2px 0 8px rgba(0, 0, 0, 0.15);
+    border-radius: 0 4px 4px 0;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 11px;
+
+    span {
+      background-color: #000000;
+      height: 2px;
+      width: 15px;
+    }
+  }
+}

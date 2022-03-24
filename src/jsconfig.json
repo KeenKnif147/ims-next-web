@@ -1,0 +1,18 @@
+{
+   "compilerOptions": {
+     "baseUrl": "./",
+     "paths": {
+      //  "@actions/*": ["./app/actions/*"],
+      //  "@assets/*": ["./app/assets/*"],
+      //  "@actions": ["./app/actions/index.js"],
+      //  "@api/*": ["./app/api/*"],
+      //  "@screens/*": ["./app/screen_2.0/*"],
+      //  "@utils/*": ["./app/utils/*"],
+      //  "@utils": ["./app/utils/index.js"],
+      //  "@configs": ["./app/configs/index.js"],
+      //  "@components": ["./app/components/index.js"],
+       "@selector": ["./selector/index.js"]
+     }
+   }
+ }
+ 

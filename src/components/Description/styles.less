@@ -1,0 +1,17 @@
+.description {
+  & > div > div { // table row
+    line-height: 28px;
+  }
+
+  .description-title {
+    white-space: nowrap;
+    display: flex;
+    justify-content: space-between;
+
+    &::after {
+      content: ':';
+      margin-left: 5px;
+      margin-right: 10px;
+    }
+  }
+}

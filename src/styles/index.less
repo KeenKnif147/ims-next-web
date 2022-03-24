@@ -1,0 +1,123 @@
+@import './variables.less';
+// ----- OVERIDE ANT DESIGN STYLES ------
+
+.ant-typography {
+  color: @dark50;
+}
+
+.ant-alert-info {
+  .ant-alert-message {
+    color: rgb(1, 87, 155)
+  }
+}
+
+.ant-alert-success {
+  .ant-alert-message {
+    color: rgb(80, 184, 60)
+  }
+}
+
+.ant-alert-warning {
+  .ant-alert-message {
+    color: rgb(237, 194, 0)
+  }
+}
+
+.ant-alert-error {
+  .ant-alert-message {
+    color: rgb(237, 99, 71)
+  }
+}
+
+// -------------------
+
+body {
+  background-color: #fafafa6b;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (min-width: @small-screen) {
+    nav {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+main {
+  @media screen and (min-width: @small-screen) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  @media screen and (max-width: @small-screen) {
+    margin: 10px 10px 50px 10px;
+  }
+}
+
+aside {
+  height: calc(100vh - 20px);
+  overflow-y: scroll;
+}
+
+.single-action-modal {
+  .ant-modal-header {
+    border: none;
+    display: flex;
+    justify-content: center;
+    padding-top: 24px;
+    padding-bottom: 24px;
+
+    .ant-modal-title {
+      font-size: 18px;
+    }
+  }
+
+  .ant-modal-body {
+    padding-top: 0;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  .ant-modal-footer {
+    border: none;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 25px;
+
+    button {
+      min-width: 145px;
+      min-height: 40px;
+      font-weight: 500;
+      font-size: 15px;
+    }
+  }
+}
+
+
+.mobile-card {
+  box-shadow: 0 2px 3px rgba(0, 0, 0, .24);
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 10px;
+
+  @media screen and (min-width: @small-screen) {
+    padding: 20px;
+  }
+
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.overflow-auto {
+  overflow: auto;
+}
+
+.h-100{
+  height: 100%;
+}
+@import './mixin.less';

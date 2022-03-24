@@ -1,0 +1,547 @@
+@import (reference) './variables.less';
+
+.flex {
+  display: flex;
+  display: -webkit-flex;
+}
+
+.flex-column {
+  .flex;
+  flex-direction: column;
+}
+
+.flex-row {
+  .flex;
+  flex-direction: row;
+}
+
+.flex-horizontal-centered {
+  .flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+.flex-vertical-centered {
+  .flex;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.flex-space-around {
+  .flex;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+}
+
+.flex-space-between {
+  .flex;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+}
+
+.flex-start {
+  .flex;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+}
+
+.flex-end {
+  .flex;
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end;
+}
+
+.flex-wrap {
+  .flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.all-centered {
+  .flex-horizontal-centered;
+  .flex-vertical-centered;
+}
+
+.aligner-items-start {
+  align-items: flex-start;
+}
+
+.aligner-items-end {
+  align-items: flex-end;
+}
+
+.text-center {
+  text-align: center;
+  align-items: center;
+}
+
+.text-end {
+  text-align: right;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.text-lowercase {
+  text-transform: lowercase;
+}
+
+.text-unset {
+  text-transform: unset;
+}
+
+.ellipsis-text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.font-larger {
+  font-size: larger;
+}
+
+.font-smaller {
+  font-size: smaller;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+.position-relative {
+  position: relative;
+}
+
+.primary-text-color {
+  color: @azure;
+}
+
+.primary-active-text-color {
+  color: @cerulean;
+}
+
+.danger-text-color {
+  color: @lightRed;
+}
+
+.danger-active-text-color {
+  color: @lipstickRed;
+}
+
+.success-text-color {
+  color: @algaeGreen;
+}
+
+.success-active-text-color {
+  color: @oldGreen;
+}
+
+.accent2-text-color {
+  color: @pumpkinOrange;
+}
+
+.accent3-text-color {
+  color: @yellowOrange;
+}
+
+.warning-text-color {
+  color: @sunYellow;
+}
+
+.orange-text-color {
+  color: @pumpkinOrange;
+}
+
+.warning-active-text-color {
+  color: @hotYellow;
+}
+
+.dark-100-text-color {
+  color: @dark100;
+}
+
+.dark-70-text-color {
+  color: @dark70;
+}
+
+.dark-50-text-color {
+  color: @dark50;
+}
+
+.dark-30-text-color {
+  color: @dark30;
+}
+
+.dark-12-text-color {
+  color: @dark12;
+}
+
+.white-100-text-color {
+  color: @white100;
+}
+
+.white-70-text-color {
+  color: @white70;
+}
+
+.white-50-text-color {
+  color: @white50;
+}
+
+.white-30-text-color {
+  color: @white30;
+}
+
+.white-12-text-color {
+  color: @white12;
+}
+
+.primary-background-color {
+  background-color: @azure;
+}
+
+.primary-active-background-color {
+  background-color: @cerulean;
+}
+
+.info-background-color {
+  background-color: @cerulean;
+}
+
+.info-active-background-color {
+  background-color: @cerulean;
+}
+
+.danger-background-color {
+  background-color: @lightRed;
+}
+
+.danger-active-background-color {
+  background-color: @lipstickRed;
+}
+
+.success-background-color {
+  background-color: @algaeGreen;
+}
+
+.success-active-background-color {
+  background-color: @oldGreen;
+}
+
+.accent2-background-color {
+  background-color: @pumpkinOrange;
+}
+
+.accent3-background-color {
+  background-color: @yellowOrange;
+}
+
+.warning-background-color {
+  background-color: @sunYellow;
+}
+
+.warning-active-background-color {
+  background-color: @hotYellow;
+}
+
+.dark-100-background-color {
+  background-color: @dark100;
+}
+
+.dark-70-background-color {
+  background-color: @dark70;
+}
+
+.dark-50-background-color {
+  background-color: @dark50;
+}
+
+.dark-30-background-color {
+  background-color: @dark30;
+}
+
+.dark-12-background-color {
+  background-color: @dark12;
+}
+
+.white-100-background-color {
+  background-color: @white100;
+}
+
+.white-70-background-color {
+  background-color: @white70;
+}
+
+.white-50-background-color {
+  background-color: @white50;
+}
+
+.white-30-background-color {
+  background-color: @white30;
+}
+
+.white-12-background-color {
+  background-color: @white12;
+}
+
+.primary-border-color {
+  border-color: @azure;
+}
+
+.primary-active-border-color {
+  border-color: @cerulean;
+}
+
+.info-border-color {
+  border-color: @azure;
+}
+
+.info-active-border-color {
+  border-color: @cerulean;
+}
+
+.danger-border-color {
+  border-color: @lightRed;
+}
+
+.danger-active-border-color {
+  border-color: @lipstickRed;
+}
+
+.accent1-border-color {
+  border-color: @algaeGreen;
+}
+
+.accent2-border-color {
+  border-color: @pumpkinOrange;
+}
+
+.accent3-border-color {
+  border-color: @yellowOrange;
+}
+
+.warning-border-color {
+  border-color: @sunYellow;
+}
+
+.warning-active-border-color {
+  border-color: @hotYellow;
+}
+
+.success-border-color {
+  border-color: @algaeGreen;
+}
+
+.success-active-border-color {
+  border-color: @oldGreen;
+}
+
+.dark-100-border-color {
+  border-color: @dark100;
+}
+
+.dark-70-border-color {
+  border-color: @dark70;
+}
+
+.dark-50-border-color {
+  border-color: @dark50;
+}
+
+.dark-30-border-color {
+  border-color: @dark30;
+}
+
+.dark-12-border-color {
+  border-color: @dark12;
+}
+
+.white-100-border-color {
+  border-color: @white100;
+}
+
+.white-70-border-color {
+  border-color: @white70;
+}
+
+.white-50-border-color {
+  border-color: @white50;
+}
+
+.white-30-border-color {
+  border-color: @white30;
+}
+
+.white-12-border-color {
+  border-color: @white12;
+}
+
+.primary-button {
+  .primary-background-color;
+  .primary-border-color;
+
+  &:hover, &:focus {
+    .primary-background-color;
+    .primary-border-color;
+    opacity: 0.9;
+  }
+
+  &:active {
+    .primary-active-background-color;
+    .primary-active-border-color;
+  }
+
+  &:disabled, &:hover:disabled, &:focus:disabled {
+    .primary-background-color;
+    .primary-border-color;
+
+    opacity: 0.5;
+  }
+
+  color: @white100 !important;
+}
+
+.info-button {
+  .info-background-color;
+  .info-border-color;
+
+  &:hover, &:focus {
+    .info-background-color;
+    .info-border-color;
+    opacity: 0.9;
+  }
+
+  &:active {
+    .info-active-background-color;
+    .info-active-border-color;
+  }
+
+  &:disabled, &:hover:disabled, &:focus:disabled {
+    .info-background-color;
+    .info-border-color;
+
+    opacity: 0.5;
+  }
+
+  color: @white100 !important;
+}
+
+.danger-button {
+  .danger-background-color;
+  .danger-border-color;
+
+  &:hover, &:focus {
+    .danger-background-color;
+    .danger-border-color;
+    opacity: 0.9;
+  }
+
+  &:active {
+    .danger-active-background-color;
+    .danger-active-border-color;
+  }
+
+  &:disabled, &:hover:disabled, &:focus:disabled {
+    .danger-background-color;
+    .danger-border-color;
+
+    opacity: 0.5;
+  }
+
+  color: @white100 !important;
+}
+
+.success-button {
+  .success-background-color;
+  .success-border-color;
+
+  &:hover, &:focus {
+    .success-background-color;
+    .success-border-color;
+    opacity: 0.9;
+  }
+
+  &:active {
+    .success-active-background-color;
+    .success-active-border-color;
+  }
+
+  &:disabled, &:hover:disabled, &:focus:disabled {
+    .success-background-color;
+    .success-border-color;
+
+    opacity: 0.5;
+  }
+
+  color: @white100 !important;
+}
+
+.warning-button {
+  .warning-background-color;
+  .warning-border-color;
+
+  &:hover, &:focus {
+    .warning-background-color;
+    .warning-border-color;
+    opacity: 0.9;
+  }
+
+  &:active {
+    .warning-active-background-color;
+    .warning-active-border-color;
+  }
+
+  &:disabled, &:hover:disabled, &:focus:disabled {
+    .warning-background-color;
+    .warning-border-color;
+
+    opacity: 0.5;
+  }
+
+  color: @dark70 !important;
+}
+
+.width-100 {
+  width: 100%;
+}
+
+.text-pre-wrap {
+  white-space: pre-wrap;
+}
+
+.shadow-xs {
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, .05)
+}
+
+.shadow-sm {
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .05)
+}
+
+.shadow {
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .1), 0 1px 2px 0 rgba(0, 0, 0, .06)
+}
+
+.shadow-md {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, .1), 0 2px 4px -1px rgba(0, 0, 0, .06)
+}
+
+.shadow-lg {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, .1), 0 4px 6px -2px rgba(0, 0, 0, .05)
+}
+
+.shadow-xl {
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, .1), 0 10px 10px -5px rgba(0, 0, 0, .04)
+}
+
+.shadow-2xl {
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, .25)
+}
+
+.shadow-inner {
+  box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, .06)
+}
+

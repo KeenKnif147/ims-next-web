@@ -1,0 +1,15 @@
+@import '../../styles/variables.less';
+
+.responsive-table {
+  @media screen and (max-width: @small-screen) {
+    tr > th {
+      padding-top: 0 !important;
+      padding-bottom: 0 !important;
+      white-space: nowrap;
+    }
+
+    tr > td {
+      vertical-align: top;
+    }
+  }
+}

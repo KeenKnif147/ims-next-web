@@ -1,0 +1,50 @@
+@import '../../styles/variables.less';
+
+.image-uploader {
+  .ant-upload-list-picture-card {
+    .ant-upload-list-item {
+      &:hover {
+        .ant-upload-list-item-actions {
+          z-index: 10;
+        }
+      }
+  
+      .ant-upload-list-item-progress {
+        bottom: 23px;
+      }
+  
+      @media screen and (max-width: @small-screen) {
+        .ant-upload-list-item-info {
+          &::before {
+            opacity: 0.8;
+          }
+        }
+  
+        .ant-upload-list-item-actions {
+          opacity: 1;
+        }
+      }
+    }
+  }
+  
+  .upload-empty {
+    .ant-upload-select-picture-card {
+      width: 100%;
+    }
+  }
+  
+  .ant-upload-hint {
+    color: rgba(0,0,0,.45);
+    margin-top: 8px;
+  }
+  
+  .ant-upload-select-picture-card i {
+    font-size: 32px;
+    color: @azure;
+  }
+  
+  .ant-upload-select-picture-card .ant-upload-text {
+    margin-top: 8px;
+    color: #666;
+  }
+}

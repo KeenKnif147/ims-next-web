@@ -1,0 +1,11 @@
+.filter-item {
+  border-width: 1px;
+  border-style: solid;
+  border-color: #fff;
+  padding: 4px 6px;
+  border-radius: 10px;
+  &:hover {
+    background-color: rgb(239, 237, 237);
+    border-color: #ccc !important;
+  }
+}
